@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "listings",
+  "info": {
+    "singularName": "listing",
+    "pluralName": "listings",
+    "displayName": "Listing",
+    "description": "A car advert ingested from a Source. Test schema for a 100-ad sample; not the final domain model."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sourceUrl": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": ["publi24", "olx"],
+      "required": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "mileageKm": {
+      "type": "integer"
+    },
+    "fuelType": {
+      "type": "string"
+    },
+    "engineDisplacementCc": {
+      "type": "integer"
+    },
+    "enginePowerHp": {
+      "type": "integer"
+    },
+    "bodyType": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "sellerName": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "fetchedAt": {
+      "type": "datetime"
+    }
+  }
+}
